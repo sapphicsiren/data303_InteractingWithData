@@ -1,0 +1,283 @@
+html {
+    width: 100%;
+    height: 100%;
+    display: table;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fee;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bf6666;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    font-weight: bold;
+    color: #bf6666;
+    text-decoration: none;
+}
+
+.title {
+    position: relative;
+    margin: 50px auto;
+    padding: 5px 15px;
+    background: #fff;
+    border: 8px solid #bf6666;
+    color: #bf6666;
+    border-radius: 3px;
+    box-shadow: 7px 7px 0 #7d343455;
+    max-width: 700px;
+}
+
+.title h1 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+}
+
+
+/*outer box*/
+.test {
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 5px;
+    border-color: #bf6666;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.test.lights-off {
+    animation: none;
+}
+
+
+/*grid background*/
+#kawaii-tools-frame {
+    padding: 30px;
+}
+
+.frame-c {
+    background-color: #ffc0ba;
+    background-size: 25px 25px;
+    background-image: linear-gradient(to right, #ffffff80 2px, transparent 2px), linear-gradient(to bottom, #ffffff90 2px, transparent 2px);
+    background-position: center;
+}
+
+/*kawaii a*/
+.kawaii-a {
+    font-family: 'VCR_OSD_MONO', sans-serif;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #bf6666;
+    color: #bf6666;
+    box-shadow: 3px 3px 0 #7d3434;
+}
+.kawaii-window {
+    width: 1050px;
+    max-width: 100%!important;
+}
+
+.kawaii-a .kawaii-header {
+    border-radius: 0;
+    padding: 15px 35px 18px 35px;
+    background: #ffa7a7;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 3px solid #bf6666;
+}
+
+.kawaii-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*window title*/
+#window-title {
+    min-width: 30px;;
+}
+
+.kawaii-a .window-title {
+    color: #fff;
+    text-shadow: 1px 1px 0 #7d3434;
+}
+
+.window-title {
+    height: fit-content;
+}
+
+
+
+/*inner box for image */
+element.style {
+    height: 100%;
+}
+
+.flex-mid {
+    display: flex;
+    align-items: center;
+}
+
+/*caption text*/
+#kawaii-caption-frame{
+    padding: 30px;
+}
+
+.frame-g {
+    background-color: #fff;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+p { 
+	margin-top: 10px; 
+	text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em
+}
+
+/*footer*/
+.w-100 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*clouds, from kawaii-windows*/
+#clouds{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+    #clouds2{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.cloud {
+    width: 230px; height: 60px;
+    background: #fff;
+    
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    
+    position: relative; 
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute; 
+    background: #fff;
+    width: 90px; height: 90px;
+    position: absolute; top: -20px; left: 30px;
+    
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+    width: 140px; height: 140px;
+    top: -55px; left: auto; right: 20px;
+}
+
+.x1 {
+    top: 0px;
+    opacity: .8;
+    animation: moving 30s linear infinite;
+    -moz-animation: moving 30s linear infinite;
+    -o-animation: moving 30s linear infinite;
+}
+
+.x2 {
+    right: 37%; top: 17%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6; 	
+    animation: moving 27s linear infinite;
+    -moz-animation: moving 27s linear infinite;
+    -o-animation: moving 27s linear infinite;
+}
+
+.x3 {
+    left: 250px; top: 15%;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.8; 	
+    animation: moving 50s linear infinite;
+    -moz-animation: moving 50s linear infinite;
+    -o-animation: moving 50s linear infinite;
+}
+
+.x4 {
+    left: 470px; top: 59%;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75; 	
+    animation: moving 10s linear infinite;
+    -moz-animation: moving 10s linear infinite;
+    -o-animation: moving 10s linear infinite;
+}
+
+.x5 {
+    right: 150px; top: 67%;
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0.8; 	
+    animation: moving 95s linear infinite;
+    -moz-animation: moving 95s linear infinite;
+    -o-animation: moving 95s linear infinite;
+}
+
+@keyframes moving {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-moz-keyframes moving {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-o-keyframes moving {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+/*end clouds*/
+
